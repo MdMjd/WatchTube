@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FETV</title>
+  <style>
+    body {
+      background-color:	#edf2f0;
+    }
+    .colorSquare {
+      height: 150px;
+      width: 240px;
+    }
+    .colorSquare#red {
+      background: url("img/test.jpg") no-repeat;
+    }
+    .colorSquare#yellow {
+      background: url("img/test.jpg") no-repeat;
+    }
+    .colorSquare#green {
+      background: url("img/test.jpg") no-repeat;
+    }
+    .colorSquare#red:hover {
+      background: url("img/test.gif") no-repeat;
+    }
+    #title {
+      font-family:"Copperplate Gothic Light";
+      color: red;
+    }
+</style>
+</head>
+
+<body>
+  <div id='title'>
+    <h2>Test</h2>
+  </div>
+
+<div style="display: flex;" >
+  <!--Red Button-->
+  <div style="margin: 20px;">
+    <button class='colorSquare' id='red' value='red'></button>
+    <p style="text-align: center; height: 30px; width: 240px;">Built vs bought - drag racing</p>
+    <div class="flex-container" style="display: flex; flex-wrap: nowrap; height: 150px; width: 240px;">
+    <div class="box" style="margin: 0 20px 0 0; text-decoration: underline;">Wheels</div>
+    <div class="box"><b style="color: red" class='viewText' id='red-text' value='red'>0</b> Views</div>
+    </div>
+  </div>
+  <!--Yellow Button-->
+  <div style="margin: 20px;">
+    <button class='colorSquare' id='yellow' style="height: 150px; width: 240px;" value='yellow'></button>
+    <p style="text-align: center; height: 30px; width: 240px;">The Award-Winning Home of an Architect</p>
+    <div class="flex-container" style="display: flex; flex-wrap: nowrap; height: 150px; width: 240px;">
+    <div class="box" style="margin: 0 20px 0 0; text-decoration: underline;">The Art Project</div>
+    <div class="box"><b style="color: red" class='viewText' id='yellow-text' value='yellow'>0</b> Views</div>
+    </div>
+  </div>
+  <!--Green Button-->
+  <div style="margin: 20px;">
+    <button class='colorSquare' id='green' value='green'></button>
+    <p style="text-align: center; height: 30px; width: 240px;">Savannah Life Wild Africa</p>
+    <div class="flex-container" style="display: flex; flex-wrap: nowrap; height: 150px; width: 240px;">
+    <div class="box" style="margin: 0 20px 0 0; text-decoration: underline;">Savannah Guides</div>
+    <div class="box"><b style="color: red" class='viewText' id='green-text' value='green'>0</b> Views</div>
+    </div>
+  </div>
+  <!---->
+</div>
+<button id="clear-game">Clear Views</button>
+<button id="test-game">Test</button>
+<p>The total views are: <i><b id="test-text"></b></i></p>
+<script src="script.js"></script>
+</body>
+
+</html>
